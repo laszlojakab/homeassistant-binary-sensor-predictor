@@ -1,0 +1,6 @@
+{
+  "name": "Binary sensor predictor",
+  "render_readme": true,
+  "zip_release": true,
+  "filename": "homeassistant-binary-sensor-predictor.zip"
+}
