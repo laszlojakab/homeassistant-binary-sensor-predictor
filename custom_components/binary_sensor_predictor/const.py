@@ -10,6 +10,6 @@ CONF_FILTER_BINARY_SENSOR = "filter_binary_sensor"
 
 ATTR_CURRENT_TIME_BLOCK_STATE = "current_time_block_state"
 ATTR_CURRENT_STATE = "current_state"
+ATTR_CURRENT_TIME_BLOCK = "current_time_block"
 ATTR_PROBABILITIES = "probabilities"
-ATTR_TIME_BLOCK_ROTATION = "time_block_rotation"
 ATTR_PROBABILITY = "probability"
