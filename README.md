@@ -26,7 +26,7 @@ The fading parameter should be between `0..1`. This controls how much the past i
 The integration contains a threshold parameter which defines the minimum calculated probability when the predictor sensor state becomes `on`. If the calculated probability for the current time block is less then the threshold the predictor sensor state will be `off`.
 
 ## Using predictions
-The integration provides a `probabilities` attribute in the sensor. This attribute is an array. The first element of the array is the predicted probability for the current time block, the second element is for the next time block and so on. As the time goes by the integration rotates the probabilities array so the current time block will always be the first element.
+The integration provides a `probabilities` attribute in the sensor. This attribute is an array. The predicted probability for the current time block is defined by the `probabilities[current_time_block]` value.
 
 So at time $T$ you want to know the predicted value for the $T + 15 minute$ you can get from the `state_attr("binary_sensor.predictor", "probabilities")[15 // 5]`.
 
