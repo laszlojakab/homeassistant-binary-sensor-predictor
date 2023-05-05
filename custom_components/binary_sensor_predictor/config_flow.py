@@ -7,7 +7,7 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.const import CONF_NAME, CONF_UNIQUE_ID
 from homeassistant.data_entry_flow import FlowResult
-from homeassistant.helpers.entity_registry import async_get_registry
+from homeassistant.helpers.entity_registry import async_get
 
 from .const import (
     CONF_BINARY_SENSOR,
@@ -36,7 +36,7 @@ class BinarySensorPredictorConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         """
         Handles the step when integration added from the UI.
         """
-        entity_registry = await async_get_registry(self.hass)
+        entity_registry = await async_get(self.hass)
 
         data_schema = vol.Schema(
             {
